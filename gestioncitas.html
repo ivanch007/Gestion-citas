@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta namer="author" content="Iván Ocampo">
+    <title>SISMED</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+
+        <nav class="menu">
+
+            <img src="/assets/SISMED.png"width="200px">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="gestioncitas.html">Gestión de citas</a></li>
+                <li><a href="cancelarcitas.html">Cancelar cita</a></li>
+                <li><a href="historiaclinica.html">Historia clínica</a></li>
+            </ul>
+  
+        </nav>
+
+    </header>
+
+    <div class="titulo">
+
+        <h1>Gestionar citas</h1>  
+        <hr>
+
+    </div>
+
+    <div class="departamentosmedicina">
+
+        <h2><strong>Departamento médico</strong></h2>
+
+        <div class="departamentomedico">
+
+            <form>
+             <label for="areamedica">Selecciona el area médica: </label>
+             <select name="areamedica" id="areamedica">
+                <option value="Selecciona el area médica" selected="selected">Selecciona una opción</option>
+                <option value="Medicina general">Medicina general</option>
+                <option value="Pediatria">Pediatria</option>
+                <option value="Ortopedia">Ortopedia</option>
+                <option value="Psicología">Psicología</option>
+             </select>
+            </form>
+    
+        </div>
+
+    </div>
+
+    <div class="profesionales">
+
+        <h2>Selección profesional</h2>
+
+        <div class="profesional">
+            
+            <form>
+            <label for="selecprofesional">Selecciona el profesional</label>
+            <select name="seleccionprofesional" id="selecprofesional">
+                <option value="Selecciona el profesional" selected="selected">Selecciona al profesional</option>
+                <option value="profesional">Juan Martinez</option>
+                <option value="profesional">Karen Arango</option>
+                <option value="Profesional">Yesenia Zuluaga</option>
+                <option value="Profesional">Miguel Serna</option>
+            </select>
+            </form>
+        </div>
+    </div>
+
+    <div class="seleccionfecha"></div>
+        <h2>Seleccione una fecha</h1>
+        <div class="fecha">
+
+            <form>
+                <label for="selefecha">Selecciona una fecha</label>
+                <input type="date" name="calendario" id="selefecha">
+            </form>
+
+        </div>
+    </div>
+
+    <input type="button" id="seleccion" value="Seleccionar cita">
+</body>
