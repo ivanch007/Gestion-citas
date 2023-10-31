@@ -4,27 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SISMED</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <img src="/assets/SISMED.png"width="300px">
-        <H1>Sistema de Gestión de Citas Medicas</H1>
+        <div id="img">
+         <img src="/assets/SISMED.png"width="250px">
+        </div>
+        <H1 id="maintitle">Sistema de Gestión de Citas Medicas</H1>
     </header>
 
-    <div>
-        <H2>Inicio sesión</H2>
+    <div class="section1">
+        <H2 class="subtitulo">Inicio sesión</H2>
 
         <div>
-            <h2>Ingresa el numero de documento</h2>
+            <h2 class="subtitulo">Ingresa el numero de documento</h2>
             <input type="text" id="usuario" placeholder="Ingresa el numero de documento">
-            <h2>Ingresa tu contraseña</h2>
+            <h2 class="subtitulo">Ingresa tu contraseña</h2>
             <input type="password" id="contraseña" placeholder="Ingresa tu contraseña">
+            <p><a href="#">Olvidé mi contraseña</a></p>
+            <p><a href="signup.html">No tengo una cuenta y quiero registrarme</a></p>
         </div>
     </div>
 
     <input type="button" value="Ingresar">
-    <p><a href="#">Olvidé mi contraseña</a></p>
-    <p><a href="signup.html">No tengo una cuenta y quiero registrarme</a></p>
+    
 </body>
 </html>
