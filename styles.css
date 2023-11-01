@@ -105,6 +105,12 @@ input[type="button"]:hover {
   cursor: pointer;
 }
 
+.boton-historia {
+  margin-top: 20px;
+  cursor: pointer;
+  margin-left: 170px;
+}
+
 a {
   text-decoration: none;
   color: blue;
@@ -151,6 +157,9 @@ a:hover {
 
 .main-de-cancelar {
   border: solid;
+  width: 50%;
+  height: 50%;
+  text-align: center;
 }
 
 .imagen-main {
@@ -171,4 +180,8 @@ a:hover {
 
 .subtitulos-cancelar {
   color: blue;
+}
+
+#id-historia {
+  margin-top: 30px;
 }
