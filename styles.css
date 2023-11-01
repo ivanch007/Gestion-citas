@@ -1,13 +1,11 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  
 }
 
 header {
@@ -97,6 +95,16 @@ input[type="button"]:hover {
   background-color: #555;
 }
 
+.boton-cita {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.boton-cancelar {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: blue;
@@ -137,6 +145,14 @@ a:hover {
   align-items: center;
 }
 
+.main-de-citas {
+  border: solid;
+}
+
+.main-de-cancelar {
+  border: solid;
+}
+
 .imagen-main {
   width: 40%;
   height: 80%;
@@ -151,4 +167,8 @@ a:hover {
   margin-right: 10px;
   border: dashed;
   border-color: grey;
+}
+
+.subtitulos-cancelar {
+  color: blue;
 }

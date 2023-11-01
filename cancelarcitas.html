@@ -11,27 +11,28 @@
 <body>
 
     <header>
-
-        <nav class="menu">
-            <img src="/assets/SISMED.png"width="200px">
-            <ul>
-                <li><a href="inicio.html">Inicio</a></li>
-                <li><a href="gestioncitas.html">Gestión de citas</a></li>
-                <li><a href="cancelarcitas.html">Cancelar cita</a></li>
-                <li><a href="historiaclinica.html">Historia clínica</a></li>
-            </ul> 
-        </nav>
-
+        <div class="imagen-cabecera">
+            
+            <img src="/assets/SISMED.png"width="200px" >
+    
+            <div class="titulo">
+                <h1 >Cancelar cita</h1>
+            </div>
+    
+        </div>    
+            <nav class="menu">
+                
+                <a href="inicio.html" class="nav-enlace">Inicio</a></li>
+                <a href="gestioncitas.html" class="nav-enlace">Gestión de citas</a></li>
+                <a href="cancelarcitas.html" class="nav-enlace">Cancelar cita</a></li>
+                <a href="historiaclinica.html" class="nav-enlace">Historia clínica</a></li>
+            </nav>
     </header>
 
-    <div class="titulo">
-
-        <h1>Cancelar citas</h1>
-        <hr>
-    </div>
+    <main class="main-de-cancelar">
 
     <div class="cancelar">
-        <h2>Selecciona tu cita</h2>
+        <h2 class="subtitulos-cancelar">Selecciona tu cita</h2>
         <form>
             <select name="cita" id="citamedica">
             <option value="Selecciona tu cita" selected="selected">Selecciona tu cita</option>
@@ -41,7 +42,7 @@
     </div> 
 
     <div class="motivo">
-        <h2>Motivo cancelación</h2>
+        <h2 class="subtitulos-cancelar">Motivo cancelación</h2>
         <form>
             <select name="motivocancelar" id="motivocancelamiento">
             <option value="motivo" selected="selected">Selecciona el motivo</option>
@@ -52,5 +53,7 @@
         </form>
     </div>
 
-    <input type="button" value="Cancelar cita">
+    </main>
+
+    <input type="button" value="Cancelar cita" class="boton-cancelar">
 </body>
