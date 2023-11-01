@@ -8,20 +8,22 @@
 </head>
 <body>
     <header>
-        <img src="/assets/SISMED.png"width="300px">
-        <H1>Sistema de Gestión de Citas Medicas</H1>
+        <div class="img">
+             <img src="/assets/SISMED.png"width="250px">
+        </div>
+        <H1 class="maintitle">Sistema de Gestión de Citas Medicas</H1>
     </header>
 
-    <div>
+    <div class="section2">
         <h2 class="subtitulo">Registro</h2>
 
         <div>
-            <label>Nombres</label>
+            <label class="subtitulo">Nombres</label>
             <input type="text">
         </div>
 
         <div>
-            <label>Apellidos</label>
+            <label class="subtitulo">Apellidos</label>
             <input type="text">  
         </div>
 
@@ -31,17 +33,26 @@
         </div>
 
         <div>
-            <label>Fecha de nacimiento</label>
+            <label class="subtitulo">Fecha de nacimiento</label>
             <input type="date">
         </div>
 
         <div>
-            <label>Contraseña</label>
+            <label class="subtitulo">Contraseña</label>
             <input type="password">
         </div>
     </div>
+    
+    <div id="tratamiento-datos">
+        <label> Acepto el tratamiento de datos </label> 
+        <input type="checkbox">
+    </div>
 
-    <input type="bottom" value="Crear usuario"> <input type="checkbox"> <p>Acepto el tratamiento de datos</p>
+    <div>
+        <input class="boton" type="button" value="Crear usuario"> 
+    </div>
+
+    
 
     
 </body>
