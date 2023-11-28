@@ -39,13 +39,17 @@
 
             <form>
              <label for="areamedica" class="etiquetas-formulario">Selecciona el area médica: </label>
-             <select name="areamedica" id="areamedica">
+             <select id="areamedica" onclick="selecDepartamentoMedico()">
                 <option value="Selecciona el area médica" selected="selected">Selecciona una opción</option>
                 <option value="Medicina general">Medicina general</option>
                 <option value="Pediatria">Pediatria</option>
                 <option value="Ortopedia">Ortopedia</option>
                 <option value="Psicología">Psicología</option>
              </select>
+             <br>
+
+             <span id="selecDepartamento"></span>
+
             </form>
     
         </div>
@@ -60,13 +64,15 @@
             
             <form>
             <label for="selecprofesional" class="etiquetas-formulario">Selecciona el profesional</label>
-            <select name="seleccionprofesional" id="selecprofesional">
+            <select id="selecprofesional" onclick="selecProfesionales()">
                 <option value="Selecciona el profesional" selected="selected">Selecciona al profesional</option>
-                <option value="profesional">Juan Martinez</option>
-                <option value="profesional">Karen Arango</option>
-                <option value="Profesional">Yesenia Zuluaga</option>
-                <option value="Profesional">Miguel Serna</option>
+                <option value="Juan Martinez">Juan Martinez</option>
+                <option value="Karen Arango">Karen Arango</option>
+                <option value="Yesenia Zuluaga">Yesenia Zuluaga</option>
+                <option value="Miguel Serna">Miguel Serna</option>
             </select>
+
+            <span id="selecPro"></span>
             </form>
         </div>
     </div>
@@ -86,4 +92,6 @@
   </main>
 
     <input type="button" id="seleccion" value="Seleccionar cita" class="boton-cita">
+
+    <script src="gestioncitas.js"></script>
 </body>
