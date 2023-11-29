@@ -84,7 +84,7 @@
             <form>
                 <label for="selefecha" class="etiquetas-formulario">Selecciona una fecha</label>
                 <input type="date" id="selefecha" >
-                <br>
+
                 <span id="spanFecha"></span>
             </form>
 
@@ -93,7 +93,10 @@
 
   </main>
 
-    <input type="button" id="seleccion" value="Seleccionar cita" class="boton-cita">
+  <input type="button" id="seleccion" value="Seleccionar cita" class="boton-cita" onclick="mostrarMensaje()">
+
+
+    <span id="mensaje"></span>
 
     <script src="gestioncitas.js"></script>
 </body>
