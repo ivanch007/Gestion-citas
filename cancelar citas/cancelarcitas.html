@@ -36,7 +36,7 @@
         <form>
             <select name="cita" id="citamedica">
             <option value="Selecciona tu cita" selected="selected">Selecciona tu cita</option>
-            <option value="medicina">Medicina general - Miguel Serna</option>
+            <option value="Miguel Serna">Medicina general - Miguel Serna</option>
             </select>
         </form>
     </div> 
@@ -45,15 +45,19 @@
         <h2 class="subtitulos-cancelar">Motivo cancelación</h2>
         <form>
             <select name="motivocancelar" id="motivocancelamiento">
-            <option value="motivo" selected="selected">Selecciona el motivo</option>
-            <option value="motivouno">Razones personales</option>
-            <option value="motivodos">Disponibilidad de tiempo</option>
-            <option value="motivotres">Estoy fuera de la ciudad</option>
+            <option value="selecciona el motivo" selected="selected">Selecciona el motivo</option>
+            <option value="Razones personales">Razones personales</option>
+            <option value="Disponibilidad de tiempo">Disponibilidad de tiempo</option>
+            <option value="Estoy fuera de la ciudad">Estoy fuera de la ciudad</option>
             </select>
         </form>
     </div>
 
+    <span id="mensaje"></span>
+
     </main>
 
-    <input type="button" value="Cancelar cita" class="boton-cancelar">
+    <input type="button" value="Cancelar cita" class="boton-cancelar" onclick="botonCancelar()">
+
+    <script src="cancelarcitar.js"></script>
 </body>
